@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h2>Search Results</h2>
+    <ul>
+        {% for quote in quotes %}
+        <li>{{ quote.text }} - {{ quote.author.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

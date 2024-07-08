@@ -1,0 +1,10 @@
+<h2>{{ author.name }}</h2>
+<p>Birthdate: {{ author.birthdate }}</p>
+<p>Bio: {{ author.bio }}</p>
+
+<h3>Quotes</h3>
+<ul>
+    {% for quote in quotes %}
+    <li>{{ quote.text }}</li>
+    {% endfor %}
+</ul>
